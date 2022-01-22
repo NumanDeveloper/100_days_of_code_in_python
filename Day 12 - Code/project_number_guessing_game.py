@@ -40,8 +40,8 @@ def game():
     print(logo)
     # Choosing a random number between 1 and 100.
     print("Welcome to the Number Guessing Game!")
-    print("I'm thinking of a number between 1 and 100.")
-    answer = randint(1, 100)
+    print("I'm thinking of a number between 1 and 50.")
+    answer = randint(1, 50)
     turns = set_difficulty()
     # Repeat the guessing functionality if they get it wrong.
     guess = 0
@@ -55,8 +55,8 @@ def game():
             print("You've run out of guesses, you lose.")
             return
         elif guess != answer:
-            print("Guess again.")
-        check_answer(guess, answer, turns)
+            print("Guess again.\n")
+        # check_answer(guess, answer, turns)
 
 
 # calling the game function to run the game
