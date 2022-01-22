@@ -1,3 +1,5 @@
 # ignore these folders
 .vscode/
 __pycache__/
+# ignore all .pyc files
+*.pyc
